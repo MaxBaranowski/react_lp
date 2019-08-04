@@ -1,0 +1,120 @@
+/*  Laptops  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #home-wrapper {
+    font-size: 2.8vw;
+    #consolidation {
+      flex-direction: column;
+      .part {
+        width: 100%;
+        height: calc(100vh - #{$nav-height} - 25px);
+        max-height: 750px;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  #home-wrapper {
+    font-size: 1.5vw;
+    #consolidation {
+      .part {
+        max-height: 600px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #home-wrapper {
+    font-size: 1.5vw;
+    #consolidation {
+      .part {
+        min-height: 70vh;
+        max-height: 720px;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #home-wrapper {
+    font-size: 1em;
+    #consolidation {
+      .part {
+        max-height: 720px;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #home-wrapper {
+    max-height: 1030px;
+    #consolidation {
+      .part {
+        min-height: auto;
+      }
+    }
+  }
+}
+
+/* Phones */
+
+// iPhone 2-4
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #home-wrapper {
+    font-size: 1.4vw;
+    #consolidation {
+      flex-direction: row;
+      .part {
+        max-height: 600px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// iPhone 5 landscape
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+  #home-wrapper {
+    font-size: 1.4vw;
+    #consolidation {
+      flex-direction: row;
+      .part {
+        max-height: 600px;
+        height: 100%;
+      }
+    }
+  }
+}
+// iPhone 6, 7, 8 in landscape
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  #home-wrapper {
+    font-size: 1.4vw;
+    #consolidation {
+      .part {
+        max-height: 600px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// iPhone 10 in landscape
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  #home-wrapper {
+    font-size: 1.4vw;
+    #consolidation {
+      .part {
+        max-height: 600px;
+        height: 100%;
+      }
+    }
+  }
+}

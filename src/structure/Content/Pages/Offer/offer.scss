@@ -1,0 +1,46 @@
+@import "structure/variables.scss";
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #offer-wrapper {
+    .page-header {
+      .page-header-title {
+        line-height: inherit;
+        padding: 10px 5px 10px 50px;
+        top: 75%;
+      }
+    }
+    #check_offer {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      p {
+        font-size: 1.2em;
+      }
+      img {
+        width: 55px;
+        bottom: -15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #offer-wrapper  {
+    #check_offer {
+      position: absolute;
+      top: 90px;
+      right: -30px;
+      width: 130px;
+      height: 130px;
+      p {
+        font-size: 1.2em;
+      }
+      img {
+        width: 55px;
+        bottom: -15px;
+      }
+    }
+  }
+}

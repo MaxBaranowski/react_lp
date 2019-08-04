@@ -1,0 +1,137 @@
+@import "structure/variables.scss";
+
+#contact-wrapper {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: row;
+    .contact-left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-weight: 500;
+      }
+      ul {
+        margin: 25px 0 25px 45px;
+        .step {
+          color: #f6bb33;
+          margin: 10px 0;
+          font-size: 1.5em;
+          font-weight: 700;
+          list-style-type: none;
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -41px;
+            @include vertical-align(absolute, 50%);
+            width: 26px;
+            height: 25px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          &.step_1 {
+            &:before {
+              background-image: url(/images/about_step_1.png);
+            }
+          }
+          &.step_3 {
+            &:before {
+              background-image: url(/images/about_step_3.png);
+            }
+          }
+        }
+      }
+      p {
+        margin: 15px 0;
+        a {
+          line-height: 1.2em;
+          color: #fff;
+          text-decoration: none;
+          background-color: #000;
+          padding: 10px 20px 10px 40px;
+          border-radius: 100px;
+          font-size: 1.2em;
+          font-weight: 50;
+        }
+      }
+      address {
+        margin-top: 45px;
+        font-style: normal;
+      }
+    }
+    .contact-right {
+      width: 50%;
+
+      .call-image {
+        width: 320px;
+        height: 320px;
+        background-image: url(/images/contact_1.png);
+        background-size: contain;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-wrapper {
+    .container {
+      .contact-left {
+        width: 100%;
+      }
+      .contact-right {
+        .call-image {
+          position: absolute;
+          top: -25px;
+          right: 0;
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 991px){
+  #contact-wrapper {
+    .container {
+      .contact-left {
+        width: 100%;
+      }
+      .contact-right {
+        .call-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #contact-wrapper {
+    .container {
+      .contact-left {
+        width: 100%;
+      }
+      .contact-right {
+        .call-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

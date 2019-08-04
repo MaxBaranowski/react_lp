@@ -1,0 +1,74 @@
+@import "structure/variables.scss";
+
+.consolidation_howto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10%;
+  min-height: 145px;
+  .step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    &.step_1 {
+      background-color: $step-1-background;
+    }
+    &.step_2 {
+      background-color: $step-2-background;
+    }
+    &.step_3 {
+      background-color: $step-3-background;
+      color: #fff;
+    }
+    img {
+      width: 70px;
+    }
+    aside {
+      padding: 0 25px;
+      h6 {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .consolidation_howto {
+    display: flex;
+    flex-direction: column;
+    .step{
+      padding: 25px 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .consolidation_howto {
+    width: 100%;
+    .step {
+      img {
+        width: 40px;
+      }
+      aside{
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

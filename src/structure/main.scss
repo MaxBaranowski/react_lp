@@ -1,0 +1,17 @@
+@import "structure/variables.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap&subset=latin-ext");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+}
+
+body {
+  background: $nav-background;
+}

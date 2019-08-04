@@ -1,0 +1,124 @@
+@import "structure/variables.scss";
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  padding: #{$content-offset-top} 15px 0 15px;
+  min-height: calc(100vh - (#{$footer-height} + #{$nav-height}));
+  max-width: $page-width;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transform: translate3d(0, 0, 0);
+}
+
+.page-wrapper {
+  $page-title-offset-left: 40;
+  background-color: $page-white-color;
+  min-height: calc(100vh - #{$nav-height});
+  padding: 35px #{$page-title-offset-left}px;
+  .page-container {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+  }
+  .page-header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    .page-header-bg {
+      width: 100%;
+      height: 250px;
+      background-position: center;
+    }
+    .page-header-title {
+      @include vertical-align(absolute, 60%);
+      left: -#{$page-title-offset-left}px;
+      background-color: $yellow-color;
+      color: #000;
+      line-height: 50px;
+      padding: 0 20px 0 #{$page-title-offset-left}px;
+    }
+  }
+  .part {
+    margin: 15px 0;
+    h2 {
+      color: $yellow-color;
+      margin: 10px 0;
+    }
+    ul {
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #content {
+    min-height: 100vh;
+    padding: 50px 0 0 0;
+    #bg {
+      // background-size: 600px cover;
+      height: 150vh;
+    }
+    .page-wrapper {
+      padding: 35px 10px;
+      font-size: 0.9em;
+      .part {
+        p {
+          width: 100%;
+        }
+        .link {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  #content {
+    min-height: 100vh;
+    #bg {
+      // background-size: 600px cover;
+      min-height: 150vh;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #content {
+    min-height: 100vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #content {
+    min-height: 100vh;
+    #bg {
+      background-size: cover;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #content {
+    min-height: 100vh;
+    #bg {
+      background-size: cover;
+    }
+  }
+}

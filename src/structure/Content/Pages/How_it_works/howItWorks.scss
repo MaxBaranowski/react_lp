@@ -1,0 +1,89 @@
+@import "structure/variables.scss";
+
+#H_I_W-wrapper {
+  .page-header {
+    .page-header-bg {
+      height: 300px;
+      background-position: center 25%;
+    }
+    .page-header-title {
+      line-height: initial;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      @include vertical-align(absolute, 75%);
+    }
+  }
+  .part {
+    ol {
+      list-style-type: none;
+      padding: 0 0 0 20px;
+      li:first-of-type {
+        ul {
+          list-style-type: none;
+        }
+      }
+    }
+    ul {
+      padding: 0 0 0 40px;
+      width: 75%;
+      li {
+        margin: 10px 0;
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #H_I_W-wrapper {
+    .page-header {
+      .page-header-title {
+        line-height: inherit;
+        padding: 10px 0 10px 50px;
+        top: 75%;
+      }
+    }
+    .part {
+      ol {
+        padding: 0;
+      }
+      ul {
+        width: 100%;
+      }
+    }
+
+    #check_offer {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      p {
+        font-size: 1.2em;
+      }
+      img {
+        width: 55px;
+        bottom: -15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  #H_I_W-wrapper {
+    #check_offer {
+      position: absolute;
+      top: 70px;
+      right: -2%;
+      width: 130px;
+      height: 130px;
+      p {
+        font-size: 1.2em;
+      }
+      img {
+        width: 55px;
+        bottom: -15px;
+      }
+    }
+  }
+}

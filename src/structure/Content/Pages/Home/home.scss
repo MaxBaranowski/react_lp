@@ -1,0 +1,30 @@
+@import "structure/variables.scss";
+
+#home-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+  background-color: transparent;
+
+  #consolidation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    .part {
+      width: 50%;
+      height: calc(100vh - #{$nav-height} - 25px);
+    }
+    .consolidation_banner {
+      width: 50%;
+    }
+    .consolidation_form {
+      border: 1px solid red;
+      width: 50%;
+      // min-width: 430px;
+    }
+  }
+}
+@import "./media.scss";

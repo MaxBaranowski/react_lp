@@ -1,0 +1,232 @@
+@import "structure/variables.scss";
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  background: $nav-background;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-height;
+  z-index: 999;
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: $page-width;
+    width: 100%;
+    .logo {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #ffffff;
+      img {
+        width: 100%;
+      }
+    }
+    .menu {
+      display: none;
+      button {
+        color: $nav-links-color;
+        text-decoration: none;
+        outline: none;
+        font-size: 1em;
+        border: none;
+        background: none;
+        &:hover {
+          font-weight: 500;
+          color: $nav-links-color-hover;
+        }
+      }
+    }
+    .navigation-links {
+      width: 50%;
+      .links {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: $nav-links-color;
+          text-decoration: none;
+          width: calc(100% / 5);
+          text-align: center;
+          &.active {
+            color: $nav-links-active-color;
+          }
+          &:hover {
+            font-weight: 500;
+            color: $nav-links-color-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+  #navigation {
+    .navigation-container {
+      .logo {
+        width: 40%;
+        img {
+          padding: 0 20px;
+        }
+      }
+      .menu {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 5%;
+      }
+      .navigation-links {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        top: $nav-height;
+        max-height: 0;
+        transition: max-height 0.5s linear;
+
+        &.show-menu-enter.show-menu-enter-active {
+          .links {
+            max-height: 0;
+          }
+        }
+
+        &.show-menu-enter-done {
+          .links {
+            //show
+            max-height: 500px;
+            transition: max-height 0.5s linear;
+          }
+        }
+
+        &.show-menu-exit.show-menu-exit-active {
+          .links {
+            max-height: 500px;
+          }
+        }
+
+        &.show-menu-exit-done {
+          .links {
+            // hide
+            max-height: 0;
+            transition: max-height 0.5s linear;
+          }
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          left: 0;
+          z-index: 1;
+          background-color: $nav-background;
+          height: auto;
+          max-height: 0;
+          overflow: hidden;
+
+          a {
+            font-size: 1.5em;
+            width: 100%;
+            padding: 0.5em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones) */
+@media only screen and (min-width: 601px) {
+  #navigation {
+    .navigation-container {
+      .logo {
+        width: 30%;
+        img {
+          padding: 0 5%;
+        }
+      }
+      .navigation-links {
+        width: 70%;
+        a {
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #navigation {
+    .navigation-container {
+      .logo {
+        width: 30%;
+        img {
+          padding: 0 20%;
+        }
+      }
+      .navigation-links {
+        width: 70%;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #navigation {
+    .navigation-container {
+      .logo {
+        width: 50%;
+        img {
+          padding: 0 65% 0 0;
+        }
+      }
+      .navigation-links {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.page-wrapper {
+  left: 0;
+  right: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  position: absolute;
+
+  opacity: 1;
+  transition: opacity 350ms linear 100ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  position: absolute;
+
+  opacity: 0;
+  transition: opacity 350ms linear;
+}

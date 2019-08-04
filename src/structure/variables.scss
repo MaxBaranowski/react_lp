@@ -1,0 +1,33 @@
+// page
+$page-width: 1024px;
+$yellow-color: #f6bb33;
+$page-white-color: #ffffff;
+// navigation
+$nav-background: #000;
+$nav-height: 50px;
+$nav-links-color: #fff;
+$nav-links-color-hover: $yellow-color;
+$nav-links-active-color: $yellow-color;
+
+// content
+$content-offset-top: $nav-height;
+
+//footer
+$footer-background: #000;
+$footer-height: 220px;
+$footer-links-color: #fff;
+$footer-links-color-hover: $yellow-color;
+
+//
+$step-1-background: #fff;
+$step-2-background: #f6bb33;
+$step-3-background: #000;
+
+
+@mixin vertical-align($position: relative, $top: 50%) {
+  position: $position;
+  top: $top;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -1,0 +1,142 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 450px) {
+  .consolidation_banner {
+    .consolidation-wrapper {
+      .consolidation-header {
+        h1 {
+          font-size: 5.7em;
+        }
+      }
+      .consolidation-body {
+        header {
+          .banner-arrow {
+            height: 90px;
+          }
+        }
+        .consolidation-body-footer {
+          margin-bottom: 25px;
+        }
+      }
+      .consolidation-footer {
+        img {
+          max-height: 65px;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 601px) {
+  .consolidation_banner {
+    .consolidation-wrapper {
+      .consolidation-header {
+        h1 {
+          font-size: 5.7em;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Phones */
+
+// iPhone 2-4
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+}
+
+// iPhone 5 landscape
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+  .consolidation_banner {
+    .consolidation-wrapper {
+      .consolidation-header {
+        padding: 15px 0 15px 15px;
+      }
+      .consolidation-body {
+        header {
+          .banner-arrow {
+            height: 85px;
+          }
+        }
+        .consolidation-body-footer {
+          margin-bottom: 25px;
+        }
+      }
+      .consolidation-footer {
+        font-size: 1.5em;
+        padding: 15px 0;
+        img {
+          max-height: 55px;
+        }
+      }
+    }
+  }
+}
+
+// iPhone 6, 7, 8 in landscape
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  .consolidation_banner {
+    .consolidation-wrapper {
+      .consolidation-header {
+        padding: 15px 0 15px 15px;
+      }
+      .consolidation-body {
+        header {
+          .banner-arrow {
+            height: 85px;
+          }
+        }
+        .consolidation-body-footer {
+          margin-bottom: 25px;
+        }
+      }
+      .consolidation-footer {
+        font-size: 1.5em;
+        padding: 15px 0;
+        img {
+          max-height: 55px;
+        }
+      }
+    }
+  }
+}
+
+// iPhone 10 in landscape
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .consolidation_banner {
+    .consolidation-wrapper {
+      .consolidation-header {
+        padding: 15px 0 15px 15px;
+      }
+      .consolidation-body {
+        header {
+          .banner-arrow {
+            height: 85px;
+          }
+        }
+        .consolidation-body-footer {
+          margin-bottom: 25px;
+        }
+      }
+      .consolidation-footer {
+        font-size: 1.5em;
+        padding: 15px 0;
+        img {
+          max-height: 55px;
+        }
+      }
+    }
+  }
+}

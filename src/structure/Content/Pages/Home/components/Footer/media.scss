@@ -1,0 +1,19 @@
+/* Phones */
+
+// iPhone 2-4
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+}
+
+// iPhone 5 landscape
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+
+}
+// iPhone 6, 7, 8 in landscape
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+
+}
+
+// iPhone 10 in landscape
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+
+}
