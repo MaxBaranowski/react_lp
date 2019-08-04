@@ -1,6 +1,7 @@
 {
   "name": "react_lp",
   "author": "Max Baranowski",
+  "homepage": "http://maxbaranowski.github.io/react_lp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.0"
   }
 }
