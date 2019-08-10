@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58b98f6e.chunk.css",
+    "main.js": "/static/js/main.c06e56d0.chunk.js",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "static/js/2.f5564c02.chunk.js": "/static/js/2.f5564c02.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.3436528ba43d187155fbd640ff6758e9.js": "/precache-manifest.3436528ba43d187155fbd640ff6758e9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/circle_1.png": "/static/media/circle_1.ede0bad8.png",
+    "static/media/circle_2.png": "/static/media/circle_2.8764d234.png",
+    "static/media/kpf.png": "/static/media/kpf.ac6f0422.png",
+    "static/media/logo.png": "/static/media/logo.26779049.png"
+  }
+}
