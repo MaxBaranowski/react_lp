@@ -7,7 +7,7 @@ import "./calculator.scss";
 export default class Calculator extends Component {
   render() {
     return (
-      <section className="consolidation-calc part">
+      <section className="consolidation-calc">
         <div className="consolidation-calc-wrapper">
           <form action="" className="consolidation-calc-form">
             <h1>Lorem, ipsum dolor.</h1>
