@@ -20,7 +20,7 @@ export default function Banner(props) {
             <img src={arrow} alt="" className="banner-arrow"/>
             <ul>
               <li>
-              Cras <b>id</b> quam
+              Lorem, ipsum dolor <b>id</b> quam
               </li>
               <li>
               Cras <b>quam</b> nulla

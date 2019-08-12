@@ -2,17 +2,13 @@ import React, { Component } from "react";
 
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
+import Calc from "./components/Calculator/Calculator";
 
 import "./home.scss";
 
-const styleTemp = {
-  margin: 0
-};
-
 export default class index extends Component {
-
-  componentDidMount(){
-    window.scrollTo(0,0)
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -20,10 +16,7 @@ export default class index extends Component {
       <section id="home-wrapper">
         <div id="consolidation">
           <Banner />
-          <Banner style={styleTemp}/>
-          {/* <section className="consolidation_form part">
-            konsolidacja forma
-          </section> */}
+          <Calc />
         </div>
         <Footer className="consolidation_howto" />
       </section>
