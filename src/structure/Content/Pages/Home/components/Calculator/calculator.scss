@@ -22,7 +22,7 @@
     height: 100%;
     min-height: 100%;
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
 
     h1 {
       color: $yellow-color;
@@ -55,7 +55,7 @@
       font-size: 1em;
       color: $yellow-color;
       font-weight: 700;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     .loan-details {
       margin-top: 1rem;
@@ -78,7 +78,7 @@
       }
     }
     .check-offer {
-      margin-top: 2rem;
+      margin-top: 1rem;
       button[type="submit"] {
         border: 0;
         width: 100%;
