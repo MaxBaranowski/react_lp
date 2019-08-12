@@ -14,20 +14,20 @@ export default function Footer(props) {
       <Step
         number="1"
         image={image_step_1}
-        name="Krok 1"
-        description="Wypełnienie&nbsp;wniosku i decyzja kredytowa."
+        name="Lorem 1"
+        description="Lorem&nbsp;Lorem ipsum dolor sit."
       />
       <Step
         number="2"
         image={image_step_2}
-        name="Krok 2"
-        description="Kontakt&nbsp;telefoniczny i&nbsp;spotkanie z Agentem."
+        name="Lorem 2"
+        description="Vivamus&nbsp;maecenas sit&nbsp;amet augue et purus."
       />
       <Step
         number="3"
         image={image_step_3}
-        name="Krok 3"
-        description="Podpisanie&nbsp;umowy i&nbsp;pieniądze na&nbsp;Twoim&nbsp;koncie!"
+        name="Lorem 3"
+        description="Aliquam&nbsp;risus ipsum,&nbsp;gravida non&nbsp;urus nec!"
       />
 
     </footer>
