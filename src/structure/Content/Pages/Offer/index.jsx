@@ -18,7 +18,7 @@ export default class index extends Component {
         id="offer"
         header={
           <Header
-            image="/images/offer_1.png"
+            image="/react_lp/images/offer_1.png"
             text="Konsolidacja - nowa, wyjątkowa oferta!"
           />
         }

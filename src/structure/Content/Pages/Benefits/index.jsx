@@ -15,7 +15,7 @@ export default class index extends Component {
       <ContentWrapper
         id="benefits"
         header={
-          <Header image="/images/benefits_1.png" text="Dlaczego warto?" />
+          <Header image="/react_lp/images/benefits_1.png" text="Dlaczego warto?" />
         }
       >
         <div className="part">

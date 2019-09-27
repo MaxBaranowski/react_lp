@@ -35,12 +35,12 @@
           }
           &.step_1 {
             &:before {
-              background-image: url(/images/about_step_1.png);
+              background-image: url(/react_lp/images/bout_step_1.png);
             }
           }
           &.step_3 {
             &:before {
-              background-image: url(/images/about_step_3.png);
+              background-image: url(/react_lp/images/about_step_3.png);
             }
           }
         }
@@ -69,7 +69,7 @@
       .call-image {
         width: 320px;
         height: 320px;
-        background-image: url(/images/contact_1.png);
+        background-image: url(/react_lp/images/contact_1.png);
         background-size: contain;
         border-radius: 50%;
         margin: 0 auto;

@@ -16,7 +16,7 @@ export default class index extends Component {
         id="H_I_W"
         header={
           <Header
-            image="/images/howItWworks_1.png"
+            image="/react_lp/images/howItWworks_1.png"
             text="Proces wnioskowania o ofertę jest bardzo prosty - tylko 3 kroki!"
           />
         }

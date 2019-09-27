@@ -14,7 +14,7 @@ export default class index extends Component {
     return (
       <ContentWrapper
         id="about"
-        header={<Header image="/images/about_1.png" text="O nas" />}
+        header={<Header image="/react_lp/images/about_1.png" text="O nas" />}
         bodyClassName="page-body"
       >
         <div className="part">
